@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+
+
+.wrapper span
+{
+text-transform: capitalize;
+color: #fff;
+-webkit-text-stroke: 2px black;
+font-size: 80px;
+display: inline;
+
+}
+
+.wrapper span:nth-child(2)
+{
+    position: absolute;
+
+    bottom: 200px;
+animation-name: floating;
+    animation-duration: 5s;
+    animation-delay: 1s;
+animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+    transform: translateX(10vw)
+}
+.wrapper span:nth-child(1)
+{
+    position: absolute;
+
+    bottom: 300px;
+animation-name: floating;
+    animation-duration: 2s;
+    animation-delay: 5s;
+animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+    transform: translateX(10vw)
+}
+
+
+@keyframes floating
+{
+0% { transform: translateX(10vw)}
+50% { transform: translateX(70vw)}
+}
